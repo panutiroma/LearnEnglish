@@ -1,0 +1,34 @@
+﻿
+.vr-point {
+    cursor: pointer;
+}
+
+.vr-hiden {
+    display: none;
+    border-color: #7fff00;
+}
+
+.vr-hiden td {
+    border-color: #00bfff;
+}
+
+/*.table td span {
+    float:none;
+    padding-left: 10%;
+    margin: 0 auto;
+}
+
+.tForm {
+    width: 52px;
+}
+.tForm input {
+    width: 50px;
+}*/
+
+.tdEdit {
+    width: 55px;
+    text-align: center
+}
+.tdEdit input {
+    width: 50px;
+}

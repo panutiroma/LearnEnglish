@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Domain.Word>
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="@Url.Content("/Scripts/jquery.js")"></script>
+<script src="@Url.Content("/Scripts/app/HideTranslation.js")"></script>
+<link type="text/css" rel="stylesheet" href="@Url.Content("/Content/wordListStyle.css")" />
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>
+            Words in English
+        </h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-center" width="60%" rowspan="2">
+                    Word
+                </th>
+                <th colspan="2" class="text-center">
+                    Phonetic
+                </th>
+            </tr>
+            <tr>
+                <th class="text-center">UK</th>
+                <th class="text-center">US</th>
+            </tr>
+            <tr></tr>
+
+            @foreach (var item in Model)
+            {
+                <tr class="vr-point vr-list-row">
+                    <td class="text-left">
+                        @item.Title
+                    </td>
+                    <td colspan="2" class="text-left">
+                        UK - @item.UkPhonic || US - @item.UsPhonic
+                    </td>
+                </tr>
+                <tr class="vr-hiden">
+                    <td>
+                        @item.Translation
+                    </td>
+                    <td class="text-center">
+                        @{ string url = "https://translate.google.com/#en/ro/" + item.Title; }
+
+                        <a href="@url" target="_blank">translate.google.com</a>
+                    </td>
+                    <td class="tdEdit">
+                        @using (Html.BeginForm("Edit", "Word", FormMethod.Get))
+                        {
+                            @Html.Hidden("Id", item.Id)
+                            <input type="submit" class="btn btn-default btn-xs" value="Edit" />
+                        }
+
+                    </td>
+                </tr>
+                            }
+
+        </table>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,7 @@
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\bin\Debug\Repository.Interfaces.dll
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\bin\Debug\Repository.Interfaces.pdb
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\bin\Debug\Domain.dll
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\bin\Debug\Domain.pdb
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.csprojResolveAssemblyReference.cache
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.dll
+D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.pdb
