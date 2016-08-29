@@ -20,3 +20,25 @@ D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Infrastructure\bin\Debug\Iesi.Col
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.dll
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Ninject.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Repository.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Repository.Interfaces.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Domain.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\NHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\FluentNHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Domain.Mapping.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Iesi.Collections.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Repository.Interfaces.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Repository.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Ninject.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Domain.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\NHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\FluentNHibernate.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\FluentNHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Domain.Mapping.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\bin\Debug\Iesi.Collections.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Infrastructure\obj\Debug\Infrastructure.pdb

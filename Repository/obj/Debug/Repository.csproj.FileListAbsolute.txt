@@ -16,3 +16,21 @@ D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository\bin\Debug\Iesi.Collect
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository\bin\Debug\NHibernate.xml
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository\obj\Debug\Repository.dll
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository\obj\Debug\Repository.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Repository.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Repository.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Domain.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Domain.Mapping.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\FluentNHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Iesi.Collections.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\NHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Repository.Interfaces.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Domain.Mapping.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Domain.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Repository.Interfaces.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\FluentNHibernate.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\FluentNHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\Iesi.Collections.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\bin\Debug\NHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\obj\Debug\Repository.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository\obj\Debug\Repository.pdb

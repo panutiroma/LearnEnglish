@@ -5,3 +5,10 @@ D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\bin\Debug\D
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.csprojResolveAssemblyReference.cache
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.dll
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\bin\Debug\Repository.Interfaces.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\bin\Debug\Repository.Interfaces.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\bin\Debug\Domain.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\bin\Debug\Domain.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.dll
+C:\Users\roman.panuti\Source\LearnEnglish\Repository.Interfaces\obj\Debug\Repository.Interfaces.pdb
