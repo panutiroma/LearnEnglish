@@ -2,7 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
-@Html.ActionLink("All words", "Index")
+@Html.ActionLink("All words", "Index", "Word")
+<br/>
+@Html.ActionLink("Add new word", "Add", "Word")
+<br/>
+@Html.ActionLink("Generate new word", "Generator", "Word")
 
 @*<div class="jumbotron">
     <h1>ASP.NET</h1>

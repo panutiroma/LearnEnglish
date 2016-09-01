@@ -12,23 +12,27 @@
     border-color: #00bfff;
 }
 
-/*.table td span {
-    float:none;
-    padding-left: 10%;
-    margin: 0 auto;
+.words-list .region {
+    margin: 0;
+    padding: 0;
+    width: 48%;
+    text-align: center;
+    float: left;
+}
+.uk-col {
+    color: #000080;
+}
+.us-col {
+    color: #800000;
 }
 
-.tForm {
-    width: 52px;
+.tdEdit span {
+    
+    margin-left: 14%;
 }
-.tForm input {
-    width: 50px;
-}*/
-
-.tdEdit {
-    width: 55px;
-    text-align: center
+.tdEdit form {
+    float: right;
 }
-.tdEdit input {
+.tdEdit form input {
     width: 50px;
 }

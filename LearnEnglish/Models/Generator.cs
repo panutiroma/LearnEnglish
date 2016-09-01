@@ -36,47 +36,59 @@ namespace LearnEnglish.Models
 
                 HtmlNode ukHtmlNode = resultat.DocumentNode.Descendants()
                     .FirstOrDefault(x =>
-                            x.Name == "span" &&
-                            x.Attributes["class"] != null &&
-                            x.Attributes["pron-region"].Value.Contains("UK") &&
-                            x.Attributes["class"].Value.Contains("pron-info"));
+                        x.Name == "span" &&
+                        x.Attributes["class"] != null &&
+                        x.Attributes["class"].Value.Contains("pron-info") &&
+                        x.Attributes["pron-region"] != null &&
+                        x.Attributes["pron-region"].Value.Contains("UK"));
 
                 HtmlNode usHtmlNode = resultat.DocumentNode.Descendants()
                     .FirstOrDefault(x =>
-                            x.Name == "span" &&
-                            x.Attributes["class"] != null &&
-                            x.Attributes["pron-region"].Value.Contains("US") &&
-                            x.Attributes["class"].Value.Contains("pron-info"));
+                        x.Name == "span" &&
+                        x.Attributes["class"] != null &&
+                        x.Attributes["class"].Value.Contains("pron-info") &&
+                        x.Attributes["pron-region"] != null &&
+                        x.Attributes["pron-region"].Value.Contains("US"));
 
-                result[0] = resultat.DocumentNode.Descendants()
-                    .FirstOrDefault(x => x.Name == "span" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("circle circle-btn sound audio_play_button uk"))?
-                    .Attributes["data-src-mp3"].Value ?? "";
 
-                result[1] = ukHtmlNode?.Descendants()
+                result[0] = ukHtmlNode?.Descendants()
                     .FirstOrDefault(x =>
                             x.Name == "span" &&
                             x.Attributes["class"] != null &&
                             x.Attributes["class"].Value.Contains("ipa"))?
-                    .ToString() ?? "";
+                    .InnerText ?? "";
 
-                result[2] = resultat.DocumentNode.Descendants()
-                    .FirstOrDefault(x => x.Name == "span" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("circle circle-btn sound audio_play_button us"))?
+                result[1] = resultat.DocumentNode.Descendants()
+                    .FirstOrDefault(x => 
+                        x.Name == "span" && 
+                        x.Attributes["class"] != null && 
+                        x.Attributes["class"].Value.Contains("circle circle-btn sound audio_play_button uk"))?
                     .Attributes["data-src-mp3"].Value ?? "";
 
-                result[3] = usHtmlNode?.Descendants()
+                result[2] = usHtmlNode?.Descendants()
                     .FirstOrDefault(x =>
                             x.Name == "span" &&
                             x.Attributes["class"] != null &&
                             x.Attributes["class"].Value.Contains("ipa"))?
-                    .ToString() ?? "";
+                    .InnerText ?? "";
+
+                result[3] = resultat.DocumentNode.Descendants()
+                    .FirstOrDefault(x => 
+                        x.Name == "span" && 
+                        x.Attributes["class"] != null && 
+                        x.Attributes["class"].Value.Contains("circle circle-btn sound audio_play_button us"))?
+                    .Attributes["data-src-mp3"].Value ?? "";
+
+                
 
                 return result;
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                
                 //   Tratarea exceptiei  !!!!!!!!!!!!!!!!!!!!
-                return null;
+                return result;
             }
 
 

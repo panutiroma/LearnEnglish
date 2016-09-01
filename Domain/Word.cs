@@ -4,14 +4,6 @@ namespace Domain
 {
     public class Word : Entity
     {
-        #region non-public members
-
-        public Word()
-        {
-        }
-
-        #endregion
-
         #region public members
 
         //public virtual long Id { get; protected set; }
@@ -32,6 +24,20 @@ namespace Domain
             UsPronunciationUrl = usPronunciationUrl;
             Translation = translation;
             Level = level;
+        }
+        public Word()
+        {
+        }
+
+        public virtual Word EditWord(Word word)
+        {
+            UkPhonic = word.UkPhonic;
+            UkPronunciationUrl = word.UkPronunciationUrl;
+            UsPhonic = word.UsPhonic;
+            UsPronunciationUrl = word.UsPronunciationUrl;
+            //Translation = word.Translation;
+
+            return this;
         }
 
         #endregion

@@ -38,8 +38,14 @@ namespace LearnEnglish.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(Word collecion)
+        public ActionResult Edit(Word collecion, string generate)
         {
+            if (!string.IsNullOrEmpty(generate))
+            {
+                ModelState.Clear();
+                return View("Edit", collecion.EditWord(Models.Generator.Generate(collecion.Title)));
+            }
+
             try
             {
                 _wordRepository.Save(collecion);
@@ -47,21 +53,24 @@ namespace LearnEnglish.Controllers
             catch (Exception)
             {
                 //  PRELUCRAREA EXCEPTIEI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                //  mesaj in partea de sus
                 return View();
             }
+
             return RedirectToAction("Index");
         }
+
         #endregion
 
         #region Generator
 
-        public ActionResult Generator(string word)
-        {
-            if (string.IsNullOrEmpty(word))
-                return View();
-            
-            return View("Edit", Models.Generator.Generate("word"));
-        }
+        //public ActionResult Generator(string word)
+        //{
+        //    if (string.IsNullOrEmpty(word))
+        //        return View();
+
+        //    return View("Edit", Models.Generator.Generate(word));
+        //}
 
         #endregion
     }
