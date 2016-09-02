@@ -206,7 +206,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Word\Index.cshtml" />
     <Content Include="Views\Word\Add.cshtml" />
-    <Content Include="Views\Word\Generator.cshtml" />
     <Content Include="Views\Word\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>

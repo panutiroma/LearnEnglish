@@ -61,17 +61,5 @@ namespace LearnEnglish.Controllers
         }
 
         #endregion
-
-        #region Generator
-
-        //public ActionResult Generator(string word)
-        //{
-        //    if (string.IsNullOrEmpty(word))
-        //        return View();
-
-        //    return View("Edit", Models.Generator.Generate(word));
-        //}
-
-        #endregion
     }
 }
