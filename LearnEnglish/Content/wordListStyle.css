@@ -12,6 +12,13 @@
     border-color: #00bfff;
 }
 
+.collapse-img {
+    display: none;
+    float: right;
+    margin-right: 0;
+    padding: 0;
+}
+
 .words-list .region {
     margin: 0;
     padding: 0;
@@ -26,6 +33,10 @@
     color: #800000;
 }
 
+.sound {
+    cursor: pointer;
+}
+
 .tdEdit span {
     
     margin-left: 14%;
@@ -35,4 +46,10 @@
 }
 .tdEdit form input {
     width: 50px;
+}
+
+#pronIframe {
+    width: 0;
+    height: 0;
+    display: none;
 }

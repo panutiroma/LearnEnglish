@@ -1,4 +1,5 @@
 ﻿using Infrastructure;
+using LearnEnglish.App_Start;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -13,6 +14,7 @@ namespace LearnEnglish
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BinderConfig.RegisterBinders(ModelBinders.Binders);
 
             ServiceLocator.RegisterAll();
         }

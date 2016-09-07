@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using System;
+using Domain;
 using NHibernate;
 using Repository.Interfaces;
 using System.Collections.Generic;
@@ -21,7 +22,14 @@ namespace Repository
 
         public virtual IList<T> GetAll<T>() where T : Entity
         {
-            return _session.QueryOver<T>().List<T>();
+            try
+            {
+                return _session.QueryOver<T>().List<T>();
+            }
+            catch (Exception)
+            {
+               return new List<T>();
+            }
         }
 
         public virtual void Delete<TEntity>(TEntity entity) where TEntity : Entity

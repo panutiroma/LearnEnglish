@@ -8,12 +8,23 @@ function HideTranslation() {
 $(document).ready(function () {
 
     $(".vr-list-row").click(function () {
-        if ($(this).next().is(":visible")) {
+        if ($(this).parent().next().is(":visible")) {
             HideTranslation();
         } else {
             HideTranslation();
-            $(this).next().show();
+            $(this).parent().next().show();
         }
+    });
+    $(".vr-list-row").hover(function() {
+        $(this).children(".collapse-img").show();
+    },
+    function() {
+        $(this).children(".collapse-img").hide();
+    });
+
+    $(".sound").click(function () {
+        var url = $(this).children("img").first().attr("media");
+        $("#pronIframe").attr("src", url);
     });
 });
 

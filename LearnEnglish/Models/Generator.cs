@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LearnEnglish.Models
 {
@@ -13,20 +14,71 @@ namespace LearnEnglish.Models
     {
         public static Word Generate(string title)
         {
-            var url = "http://dictionary.cambridge.org/dictionary/english/" + title.ToLower();
-            var resolt = Parsing(url);
+            var resolt = ParsingPron("http://dictionary.cambridge.org/dictionary/english/" + title.ToLower());
+            var tran = ParsingTran("http://www.dictionarenglezroman.ro/?cuvant=" + title.ToLower());
 
-            return new Word(title, resolt[0], resolt[1], resolt[2], resolt[3], "");
+            return new Word(title, resolt[0], resolt[1], resolt[2], resolt[3], tran);
+        }
+        
+        private static string ParsingTran(string url)
+        {
+            try
+            {
+                HttpClient http = new HttpClient();
+                byte[] response = http.GetByteArrayAsync(url).Result;
+                string source = Encoding.GetEncoding("utf-8").GetString(response, 0, response.Length - 1);
+                source = WebUtility.HtmlDecode(source);
+                HtmlDocument resultat = new HtmlDocument();
+                resultat.LoadHtml(source);
+
+                HtmlNode table = resultat.DocumentNode.Descendants()
+                    .FirstOrDefault(x =>
+                        x.Name == "div" &&
+                        x.Attributes["id"] != null &&
+                        x.Attributes["id"].Value.Contains("traducere"));
+
+                IEnumerable<HtmlNode> children = table?.Descendants()
+                    .Where(x =>
+                        (x.Name == "span" &&
+                         x.Attributes["class"] != null &&
+                         x.Attributes["class"].Value.Contains("forma")) ||
+                        x.Name == "h2").ToList();
+
+                var text = "";
+                foreach (var child in children)
+                {
+                    switch (child.Name)
+                    {
+                        case "span":
+                            if (text != "")
+                            {
+                                text = text.Remove(text.Length - 2) + "; " + "\n\r";
+                            }
+                            text += child.InnerText + " - ";
+                            break;
+                        case "h2":
+                            text += child.InnerText + ", ";
+                            break;
+                        default: break;
+                    }
+                }
+
+                return text.Remove(text.Length - 2);
+            }
+            catch (Exception)
+            {
+
+                return "";
+            }
         }
 
-        private static string[] Parsing(string url)
+        private static string[] ParsingPron(string url)
         {
             var result = new string[4];
 
             try
             {
                 HttpClient http = new HttpClient();
-                //var response = await http.GetByteArrayAsync(url);
                 byte[] response = http.GetByteArrayAsync(url).Result;
                 string source = Encoding.GetEncoding("utf-8").GetString(response, 0, response.Length - 1);
                 source = WebUtility.HtmlDecode(source);
@@ -84,7 +136,7 @@ namespace LearnEnglish.Models
                 return result;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 
                 //   Tratarea exceptiei  !!!!!!!!!!!!!!!!!!!!
@@ -95,5 +147,3 @@ namespace LearnEnglish.Models
         }
     }
 }
-
-// circle circle-btn sound audio_play_button uk

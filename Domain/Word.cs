@@ -35,7 +35,7 @@ namespace Domain
             UkPronunciationUrl = word.UkPronunciationUrl;
             UsPhonic = word.UsPhonic;
             UsPronunciationUrl = word.UsPronunciationUrl;
-            //Translation = word.Translation;
+            Translation = word.Translation;
 
             return this;
         }

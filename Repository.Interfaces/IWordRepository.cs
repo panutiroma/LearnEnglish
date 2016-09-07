@@ -11,6 +11,8 @@ namespace Repository.Interfaces
 
         void Save(Word entity);
 
+        void Delete(long id);
+
         void Delete(Word entity);
     }
 }

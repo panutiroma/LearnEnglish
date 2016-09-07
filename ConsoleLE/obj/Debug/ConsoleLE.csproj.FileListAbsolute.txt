@@ -23,3 +23,28 @@ D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\ConsoleLE\bin\Debug\Iesi.Collecti
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.csprojResolveAssemblyReference.cache
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.exe
 D:\PROJECTS\LearnEnglish\LE v.1.0\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.csprojResolveAssemblyReference.cache
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.exe
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\obj\Debug\ConsoleLE.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\ConsoleLE.exe.config
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\ConsoleLE.exe
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\ConsoleLE.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Domain.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Infrastructure.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Repository.Interfaces.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Ninject.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Repository.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\NHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\FluentNHibernate.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Domain.Mapping.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Iesi.Collections.dll
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Domain.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Infrastructure.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Repository.Interfaces.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Ninject.xml
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Repository.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\NHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\FluentNHibernate.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\FluentNHibernate.xml
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Domain.Mapping.pdb
+C:\Users\roman.panuti\Source\LearnEnglish\ConsoleLE\bin\Debug\Iesi.Collections.xml

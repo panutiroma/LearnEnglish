@@ -28,10 +28,17 @@
         </div>
     </div>
     <div class="container body-content">
+        @if (TempData["succes_message"] != null)
+        {
+            <div class="alert alert-success">@TempData["succes_message"]</div>
+        }@if (TempData["error_message"] != null)
+        {
+            <div class="alert alert-danger">@TempData["error_message"]</div>
+        }
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Roman Panuti</p>
         </footer>
     </div>
 

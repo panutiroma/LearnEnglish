@@ -8,6 +8,16 @@ namespace Repository
 {
     public class WordRepository : Repository, IWordRepository
     {
+
+        public void Delete(long id)
+        {
+            using (var transaction = _session.BeginTransaction())
+            {
+                _session.Delete(Get(id));
+                transaction.Commit();
+            }
+        }
+
         public void Delete(Word entity)
         {
             base.Delete(entity);

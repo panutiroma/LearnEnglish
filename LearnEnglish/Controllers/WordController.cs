@@ -23,6 +23,7 @@ namespace LearnEnglish.Controllers
         public ActionResult Index()
         {
             return View(_wordRepository.GetAll());
+
         }
 
         public ActionResult Add()
@@ -40,6 +41,8 @@ namespace LearnEnglish.Controllers
         [HttpPost]
         public ActionResult Edit(Word collecion, string generate)
         {
+            var title = collecion.Title;
+            collecion.Title = char.ToUpper(title[0]) + title.Substring(1);
             if (!string.IsNullOrEmpty(generate))
             {
                 ModelState.Clear();
@@ -49,12 +52,41 @@ namespace LearnEnglish.Controllers
             try
             {
                 _wordRepository.Save(collecion);
+                TempData["succes_message"] = string.Format($"Word \"{collecion.Title}\" has been saved");
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 //  PRELUCRAREA EXCEPTIEI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 //  mesaj in partea de sus
+                TempData["error_message"] = string.Format(e.Message);
                 return View();
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        #endregion
+
+        #region Delete
+
+        public ActionResult Delete(long id)
+        {
+            Word w = _wordRepository.Get(id);
+            return View(w);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Word w)
+        {
+            try
+            {
+                _wordRepository.Delete(w);
+                TempData["succes_message"] = string.Format($"Word \"{w.Title}\" has been deleted");
+            }
+            catch (Exception e)
+            {
+                TempData["error_message"] = string.Format($"Error! Word \"{w.Title}\" has not been deleted.\n\r{e.Message}");
+                return View(w);
             }
 
             return RedirectToAction("Index");
