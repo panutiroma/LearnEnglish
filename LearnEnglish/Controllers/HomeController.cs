@@ -9,7 +9,7 @@ namespace LearnEnglish.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Word");
         }
 
         public ActionResult About()

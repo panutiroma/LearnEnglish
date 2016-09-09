@@ -159,6 +159,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\HtmlExtensions.cs" />
     <Compile Include="Models\Dto\WordDto.cs" />
     <Compile Include="Models\Generator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

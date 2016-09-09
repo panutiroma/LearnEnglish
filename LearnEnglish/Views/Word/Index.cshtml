@@ -1,4 +1,7 @@
-﻿@model IEnumerable<Domain.Word>
+﻿@using LearnEnglish.Infrastructure
+
+@model IEnumerable<Domain.Word>
+
 @{
     ViewBag.Title = "Index";
 }
@@ -13,7 +16,10 @@
             Words in English
         </h3>
         <br />
-        @Html.ActionLink("Add new word", "Add", "Word")
+        @using (Html.BeginForm("Add", "Word", FormMethod.Get))
+        {
+            <input type="submit" class="btn btn-success btn-xs" value="Add new word" />
+        }
     </div>
     <div class="panel-body">
         <table class="words-list table table-striped table-condensed table-bordered">
@@ -38,7 +44,7 @@
                 {
                     <tr>
                         <td class="text-left vr-point vr-list-row">
-                            @item.Title
+                            <b>@item.Title</b>
                             <span class="collapse-img">
                                 <img src="/Content/Images/sort_down_red.png" alt="Click to see translated" />
                             </span>
@@ -46,14 +52,14 @@
                         <td class="text-left">
                             <div class="region uk-col sound">
                                 @item.UkPhonic
-                                <img src="/Content/Images/kmix22.png" alt="Click to listen pronunciation" media="@item.UkPronunciationUrl" />
+                                <img src="/Content/Images/kmix22.png" alt="Click to listen pronunciation" media="@item.UkPronunciationUrl"/>
                             </div>
                             <div class="region us-col sound">
                                 @item.UsPhonic
-                                <img src="/Content/Images/kmix22.png" alt="Click to listen pronunciation" media="@item.UsPronunciationUrl" />
+                                <img src="/Content/Images/kmix22.png" alt="Click to listen pronunciation" media="@item.UsPronunciationUrl"/>
                             </div>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center vr-point vr-list-row">
                             @for (var i = 0; i < 5; i++)
                             {
                                 if (i < item.Level)
@@ -62,14 +68,14 @@
                                 }
                                 else
                                 {
-                                    <img src="/Content/Images/star_wb.png" alt="" />
+                                    <img src="/Content/Images/star_wb.png" alt=""/>
                                 }
                             }
                         </td>
                     </tr>
                     <tr class="vr-hiden">
                         <td>
-                            @item.Translation
+                            @Html.Raw(HtmlExtensions.TranslationToHtml(item.Translation))
                         </td>
                         <td class="tdEdit text-right" colspan="2">
                             <span>
@@ -85,8 +91,8 @@
                             </span>
                         </td>
                     </tr>
-                                        }
-                                    }
+                }
+            }
         </table>
     </div>
 </div>
